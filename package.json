@@ -3,9 +3,6 @@
   "version": "0.0.8",
   "description": "Lightweight Node.js WAV file info helper",
   "main": "wav-file-info.js",
-  "scripts": {
-    "test": "mocha test"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/rackfx/Node-WAV-File-Info.git"
