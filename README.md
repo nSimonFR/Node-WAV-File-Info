@@ -16,22 +16,13 @@ npm install wav-file-info --save
 ```
 
 ```javascript
-var wavFileInfo = require('wav-file-info');
+const wavFileInfo = require('wav-file-info');
 
-wavFileInfo.infoByFilename('./test.wav', function(err, info){
-  if (err) throw err;
-  console.log(info);
-});
+const result = wavFileInfo.infoByFilename('./test.wav');
+
+// Or:
+const result = wavFileInfo.infoFromBuffer(myBuffer);
 ```
-#### if `err` is not null, the WAV file is valid.
-
-From the command line you can run:
-
-```
-node wfi.js <filename>
-```
-
-
 
 
 ### Result
